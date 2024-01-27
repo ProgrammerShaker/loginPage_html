@@ -1,0 +1,99 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url(../img/log3.jpg); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.container{
+    padding: 20px 0 70px 0;
+    width: 700px;
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    color: white;
+    transform: translate(-50% -50%);
+}
+.texts{
+    padding-bottom: 10px;
+}
+h1{
+    padding: 3px;
+    font-size: 24px;
+    text-align: center;
+}
+.t2{
+    color: yellow;
+    font-weight: 100 bold;
+    letter-spacing: 2px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.t1{
+    font-family:monospace;
+    font-style:oblique;
+}
+.form-group{
+    padding: 3px;
+    margin:20px;
+}
+input[type="text"],
+input[type="password"]{
+    display: inline;
+    width: 400px;
+    padding: 6px;
+    text-align: center;
+    border: none;
+    background: none;
+    border-bottom:1px solid white ;
+    color: white;
+}
+input[type="text"]:focus,
+input[type="password"]:focus {
+    outline: none;
+}
+input[type="text"]::placeholder,
+input[type="password"]::placeholder {
+    color: rgb(185, 180, 180); 
+    font-weight: bold; 
+}
+input[type="submit"]{
+    border: none;
+    width: 200px;
+    height: 40px;
+    background-color: blue;
+    color: white;
+    font-size: 20px;
+    font-weight: 100px bold;
+}
+input[type="submit"]:hover{
+    background-color: olivedrab;
+    font-style: italic;
+}
+a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+}
+.li-pop{
+    margin: 30px;
+    background:yellow;
+    width: 500px;
+    padding: 7px;
+}
+.li-pop:hover{
+    background: red;
+    color: white;
+}
+.span{
+    padding:0 10px 0 10px;
+    font-size: 10px;
+
+}

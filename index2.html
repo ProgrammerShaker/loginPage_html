@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>Login Network</title>
+</head>
+<body>
+    <div class="container">
+        <div class="texts">
+            <h1 class="t1">شاكر الوصابي</h1>
+            <h1 class="t2">SHAKER ALWSABI</h1>
+        </div>
+        <div class="span">
+            <span>
+                <marquee direction="right" bgcolor="blue">
+                    <font b size="5">اهلا وسهلا بكم في صفحة شاكر الوصابي</font>
+                </marquee>
+            </span>
+        </div>
+        <center>
+            <form>
+                <div class="form-group">
+                    <input type="text" name="username" placeholder="اسم المستخدم" required>
+                    <span id="usernameError" class="error"></span>
+                </div>
+                <div class="form-group">
+                    <input type="password" placeholder="كلمة المرور" required>
+                </div>
+                <input type="submit" name="login" value="الدخول" onclick="validateForm()" required>
+            </form>
+        </center>
+    </div>
+
+    <script>
+        function validateForm() {
+            var username = document.forms[0].username.value;
+            var password = document.forms[0].password.value;
+            if (username === "" ) {
+                document.getElementById("usernameError").innerHTML = "يرجى إدخال اسم المستخدم";
+                return false;
+            }
+            if(password ==""){
+                document.getElementById("passwordError").innerHTML = "يرجى ادخال كلمه السر";
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>
